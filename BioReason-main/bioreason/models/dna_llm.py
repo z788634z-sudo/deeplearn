@@ -143,7 +143,7 @@ class DNALLMModel(nn.Module):
                     return_embeddings=True,
                     layer_names=[self.dna_embedding_layer],
                 )
-
+                
                 # Retrieve embeddings for the specified layer (shape: [batch, seq_len, hidden_dim])
                 hidden_states = embeddings[self.dna_embedding_layer]
 
